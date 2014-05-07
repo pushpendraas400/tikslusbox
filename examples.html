@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+<title>Tikslus Box</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tikslusbox.js"></script>
+<script type="text/javascript" src="js/rainbow.min.js"></script>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/tikslusbox.css" />
+<link rel="stylesheet" href="css/github.css" />
+<style>
+body{
+padding:20px;
+}
+</style>
+</head>
+<body>
+
+
+<h1 class="main_heading">Tikslus Box</h1>
+                
+ 
+                
+				<p>
+	<p>This is a jQuery-powered modal windowing system</p>
+
+	<p>It can be used to show content inside a nice floating popup frame above the rest of the page.</p>
+	<p>Here are some key features of <b>Tikslusbox</b>:</p>
+<ul class="ulnone">
+
+ <li> 8 skins</li>
+<li> 3 transition effects</li>
+<li> Smooth animations</li>
+<li> Page dimming overlay</li>
+</ul>
+<ul class="ulnone">
+ Support for:
+<li> Images</li>
+<li> Image galleries</li>
+<li> SWF files</li>
+<li> YouTube videos</li>
+<li> MySpace videos</li>
+<li> Vimeo videos</li>
+<li> Metacafe videos</li>
+<li> WMV movie</li>
+<li> Quicktime movies</li>
+<li> Inline HTML content</li>
+</ul>
+		</p>
+		
+<p class="note">any link having class <b>tikslusbox</b> can be opened with lightbox</p>		
+		
+<p>Include jquery,tikslusbox css and js files </p>
+<pre>
+<code data-language="javascript">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/tikslusbox.js"></script>
+<link rel="stylesheet" href="js/tikslusbox.css"></link>
+</code>
+</pre>		
+
+		
+		<h4 class="heading">Example 1: Image Gallery</h4>
+		<p>To create an image gallery create linkable images using IMG tag. Name gallery using <b>rel</b> attribute on the links. Add class <b>tikslusbox</b> to the links.</p>
+		<p>set <b>href</b> to image to be opend in lightbox</p>
+		<p>Use thumbnail images in IMG tag </p>
+		<p>In the Example below all the links having <b>rel=cars</b> will be opend under same gallery</p>
+		<p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<table width="90%">
+<tr>
+<td>
+<a rel="cars" href="gallery_images/car1.jpg" title="Nice Car" class="tikslusbox"><img src="gallery_images/car1_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car2.jpg" title="Nice Car 2" class="tikslusbox"><img src="gallery_images/car2_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car3.jpg" title="Nice Car 3" class="tikslusbox"><img src="gallery_images/car3_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car4.jpg" title="Nice Car 4" class="tikslusbox"><img src="gallery_images/car4_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car5.jpg" title="Nice Car 5" class="tikslusbox"><img src="gallery_images/car5_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car6.jpg" title="Nice Car 6" class="tikslusbox"><img src="gallery_images/car6_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car7.jpg" title="Nice Car 7" class="tikslusbox"><img src="gallery_images/car7_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car8.jpg" title="Nice Car 8" class="tikslusbox"><img src="gallery_images/car8_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car9.jpg" title="Nice Car 9" class="tikslusbox"><img src="gallery_images/car9_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car10.jpg" title="Nice Car 10" class="tikslusbox"><img src="gallery_images/car10_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car11.jpg" title="Nice Car 11" class="tikslusbox"><img src="gallery_images/car11_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="gallery_images/car12.jpg" title="Nice Car 12" class="tikslusbox"><img src="gallery_images/car12_thumb.jpg" border="0"></a>
+</td>
+
+</tr>
+</table>
+		
+		
+		
+		</code>
+		</PRE>
+		
+		<p>Javascript</p>
+		<pre>
+		<code data-language="javascript">
+		
+		
+$(document).ready(function()
+{
+$.fn.tikslusbox({
+descriptionBarOpacity:0.9,
+autoPlay:false,
+animationType:'elastic',
+skin:'elegant4'
+});
+});
+
+	
+		</code>
+		</pre>
+		
+		<!--code implementation -->
+		<table width="90%">
+<tr>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car1.jpg" title="Nice Car" class="tikslusbox"><img src="tikslusbox_gallery/car1_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="/tikslusbox_gallery/car2.jpg" title="Nice Car 2" class="tikslusbox"><img src="tikslusbox_gallery/car2_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car3.jpg" title="Nice Car 3" class="tikslusbox"><img src="tikslusbox_gallery/car3_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car4.jpg" title="Nice Car 4" class="tikslusbox"><img src="tikslusbox_gallery/car4_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car5.jpg" title="Nice Car 5" class="tikslusbox"><img src="tikslusbox_gallery/car5_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car6.jpg" title="Nice Car 6" class="tikslusbox"><img src="tikslusbox_gallery/car6_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car7.jpg" title="Nice Car 7" class="tikslusbox"><img src="tikslusbox_gallery/car7_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car8.jpg" title="Nice Car 8" class="tikslusbox"><img src="tikslusbox_gallery/car8_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car9.jpg" title="Nice Car 9" class="tikslusbox"><img src="tikslusbox_gallery/car9_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car10.jpg" title="Nice Car 10" class="tikslusbox"><img src="tikslusbox_gallery/car10_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car11.jpg" title="Nice Car 11" class="tikslusbox"><img src="tikslusbox_gallery/car11_thumb.jpg" border="0"></a>
+</td>
+<td>
+<a rel="cars" href="tikslusbox_gallery/car12.jpg" title="Nice Car 12" class="tikslusbox"><img src="tikslusbox_gallery/car12_thumb.jpg" border="0"></a>
+</td>
+
+</tr>
+</table>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+$.fn.tikslusbox({
+descriptionBarOpacity:0.9,
+autoPlay:false,
+animationType:'elastic',
+skin:'tikslus'
+});
+});
+</script>
+
+<!--code implementation ends-->
+
+		<h4 class="heading">Example 2: open vimeo video</h4>
+		<p>To open vimeo video create a link with <b>tikslusbox</b> class. Set link <b>href</b> to vimeo video. Width and height of the video can be set in the url itself see below example. Width is set to 400 and height is set to 193</p>
+		<p>Set attribute <b>mediatype="vimeo"</b>
+		<p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<div id="vimeo_example">
+<p>
+<h2>Open Vimeo Content</h2>
+<a class="tikslusbox" href="http://vimeo.com/26831779?width=400&height=193" mediatype="vimeo" title="Video from vimeo">Click this link to open Vimeo Video</a>
+</p>
+</div>
+		</code>
+		</PRE>
+			
+		<!--code implementation -->
+                <p><a class="tikslusbox" href="http://vimeo.com/26831779?width=400&height=193" mediatype="vimeo" title="Video from vimeo">Click this link to open Vimeo Video</a></p>
+                
+		
+		
+		
+			<h4 class="heading">Open Youtube Contente</h4>
+		
+		<p>HTML</p>
+			<PRE>
+		<code data-language="html">
+	<a class="tikslusbox" mediatype="youtube" href="http://www.youtube.com/watch?v=bze1tqF7sio&width=560&height=349">Click this link to open Youtube Video</a>
+		</code>
+		</PRE>
+		
+		
+		
+		<!--code implementation -->
+                
+                <p>
+                <a class="tikslusbox" mediatype="youtube" href="http://www.youtube.com/watch?v=bze1tqF7sio&width=560&height=349">Click this link to open Youtube Video</a>
+                </p>
+                
+		
+		
+		
+		
+			<h4 class="heading">Open SWF</h4>
+		
+		<p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<a class="tikslusbox" mediatype="swf" href="http://files6.fliiby.com/flash/90cxhju6lj.swf?width=640&height=480">Click this link to open SWF file</a>	
+		</code>
+		</PRE>
+		
+		
+		
+		<!--code implementation -->
+                <p>
+                 <a class="tikslusbox" mediatype="swf" href="http://files6.fliiby.com/flash/90cxhju6lj.swf?width=640&height=480">Click this link to open SWF file</a>	   
+                    </p>
+                    
+	
+		
+		
+		
+		
+			<h4 class="heading">Open Quicktime</h4>
+		
+		<p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<a class="tikslusbox" mediatype="quicktime" href="http://podcast.louisville.edu/filedata/0a/fb/39ed4e0f6d1001634db1172a7cd7_sample_300kbit.mov?width=480&height=550">Click this link to open quicktime Video</a>	
+		</code>
+		</PRE>
+		
+		
+		
+		<!--code implementation -->
+		<p><a class="tikslusbox" mediatype="quicktime" href="http://podcast.louisville.edu/filedata/0a/fb/39ed4e0f6d1001634db1172a7cd7_sample_300kbit.mov?width=480&height=550">Click this link to open quicktime Video</a></p>
+		
+                
+                		<h4 class="heading">Open video (wmv,avi)</h4>
+		
+		<p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<a class="tikslusbox" mediatype="video" href="tikslusbox_gallery/panel_mask.wmv?width=720&height=480">Click this link to open WMV file</a>
+		</code>
+		</PRE>
+                
+		<!--code implementation -->
+              <p>  <a class="tikslusbox" mediatype="video" href="tikslusbox_gallery/panel_mask.wmv?width=720&height=480">Click this link to open WMV file</a></p>
+		
+              
+              
+              <h4 class="heading">Open myspace</h4>
+              
+              <p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<a class="tikslusbox" mediatype="myspace" href="http://www.myspace.com/video/rihanna/what-39-s-my-name-feat-drake/107027607?width=425&height=360">Click this link to open Myspace video</a>
+		</code>
+		</PRE>
+                
+		<!--code implementation -->
+                <p><a class="tikslusbox" mediatype="myspace" href="http://www.myspace.com/video/rihanna/what-39-s-my-name-feat-drake/107027607?width=425&height=360">Click this link to open Myspace video</a></p>
+              
+                
+                 <h4 class="heading">Open metacafe</h4>
+              
+              <p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<a class="tikslusbox" mediatype="metacafe" href="http://www.metacafe.com/watch/6813289/best_funny_video_ever/?width=440&height=272">Click this link to open metacafe video</a>
+		</code>
+		</PRE>
+                
+		<!--code implementation -->
+                <p><a class="tikslusbox" mediatype="metacafe" href="http://www.metacafe.com/watch/6813289/best_funny_video_ever/?width=440&height=272">Click this link to open metacafe video</a></p>
+                
+                
+                   
+                 <h4 class="heading">Open iframe</h4>
+              
+              <p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<a class="tikslusbox" mediatype="iframe" href="http://google.com/?width=700&height=500&scrolling=no">Click this link to open Google</a>
+		</code>
+		</PRE>
+                
+		<!--code implementation -->
+                <p><a class="tikslusbox" mediatype="iframe" href="http://google.com/?width=700&height=500&scrolling=no">Click this link to open Google</a></p>
+                
+                
+                
+                     
+                 <h4 class="heading">Open Inline</h4>
+              
+              <p>HTML</p>
+			<PRE>
+		<code data-language="html">
+		<a class="tikslusbox" mediatype="inline" href="#inline-example">Click this link to open inline content in tikslusbox</a>
+                <div id="inline-example" style="display:none;width:400px;height:300px">
+<p>
+Lorem ipsum dolor sit amet, te eum puto illum numquam. At perpetua expetendis definiebas per, est ne hendrerit democritum, no clita diceret fastidii per. Vim civibus urbanitas reformidans ex, odio luptatum salutatus nec eu, commodo indoctum mea an. Ius eu amet sententiae reprimique, ea mei gloriatur maiestatis, appetere qualisque te has. Ullum mundi eligendi vix cu, eam legendos oportere repudiandae et, eam feugiat feugait constituam id.
+
+Agam novum conceptam et eos, nonumy inimicus salutatus ad vim, eum eu audire expetendis. Ea noluisse gubergren vulputate mel, ea tollit tantas ubique qui, ius ea alterum euismod fuisset. Usu aliquid delicata te, vis ex omnes scripta prodesset. Vim movet apeirian evertitur no. Pri at nusquam tincidunt, id vim facer postea philosophia. Prima epicuri pericula no eos.
+
+<p>
+</div>
+                
+		</code>
+		</PRE>
+                
+		<!--code implementation -->
+               <p> 	<a class="tikslusbox" mediatype="inline" href="#inline-example">Click this link to open inline content in tikslusbox</a></p>
+                
+		</div>
+		
+
+</body>
+
+
+
+
+</html>
