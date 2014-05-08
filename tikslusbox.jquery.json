@@ -1,0 +1,46 @@
+{
+  "name": "tikslusbox",
+  "title": "Tikslus box.Jquery Lightbox with 8 skins",
+  "version": "1.0.0",
+  "description": "This is a jQuery-powered modal windowing system.It can be used to show content inside a nice floating popup frame above the rest of the page.Here are some key features of Tikslusbox:8 skins,3 transition effects,Smooth animations,Page dimming overlay.Support for:Images,Image galleries,SWF files,YouTube videos,MySpace videos,Vimeo videos,Metacafe videos,WMV movie,Quicktime movies,Inline HTML content,iframe",
+  "homepage": "http://tikslus.com/plugins/free#tikslusbox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pushpendra10/tikslusbox.git"
+  },
+  "keywords": [
+    "lightbox",
+    "jQuery",
+    "popup",
+    "youtube",
+    "video",
+    "image",
+	"myspace",
+	"vimeo",
+	"quicktime",
+	"gallery",
+	"metacafe",
+	"inline-content",
+	"overlay",
+	"box"
+	
+	
+  ],
+  "author": {
+    "name": "Pushpendra Singh Chouhan",
+    "email": "pushpendra.as400@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pushpendra10/tikslusbox/blob/master/mit-license.txt"
+    }
+  ],
+  "bugs": "https://github.com/pushpendra10/tikslusbox/issues",
+  "download": "http://tikslus.com/web/bundles/tikslustikslus/downloads/tikslusbox.zip",
+  "demo" : "http://tikslus.com/tikslusbox/demo",
+  "docs" : "http://tikslus.com/tikslusbox/demo",
+  "dependencies": {
+    "jquery": ">=1.3"
+  }
+}
