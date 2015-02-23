@@ -22,3 +22,7 @@ Inline HTML content
 
 
 visit http://tikslus.com/tikslusbox/demo for demo
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pushpendra10/tikslusbox/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
